@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+     width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), black), url(images/cover1.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+   background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.header-text h1 {
+    font-size: 50px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email input {
+    padding: 12px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.body-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    height: 450px;
+}
+
+.text-col {
+    width: 50%;
+}
+
+.img-col {
+    width: 50%;
+    position: relative;
+}
+
+.img-col img {
+    width: 100%;
+}
+
+/*.img-col video {
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    transform: translateX(-48%);
+    width: 85%;
+    margin: 5px;
+}*/
+
+ .img-col video {
+    position: absolute;
+    top: 3%;
+    left: 46%;
+    transform: translateX(-48%);
+    width: 85.5%;
+/*    margin: 5px;*/
+} 
+
+ .faq{
+    margin-top: 50px;
+} 
+.faq .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq H1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+   
+}
+.faq .row button{
+    padding: 18px 50px;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 0;
+    text-align: left;
+    outline: 0;
+    margin-bottom: 10px;
+    transition: all 0.1s;
+}
+.faq .row button:hover{
+    background-color: rgb(93, 92, 92);
+}
+.faq .row button::after{
+    content: '+';
+    float: right;
+    font-size: 35px;
+}
+.faq-footer .header-text{
+    margin-top: 30px;
+}
+.faq-footer .header-text p{
+    margin-top: 10px;
+}
+.footer h2{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 25px;
+
+}
+
+.footer h2 span{
+text-decoration: underline;
+color: gray;
+}
+
+.footer{
+    width: 100%;
+    padding: 50px 12% 20px;
+}
+.footer .row{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 20px 0px;
+}
+.footer .row .col a{
+    display: block;
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.footer p{
+    margin: 15px;
+}
+
+@media (max-width: 850px) {
+    header {
+        height: auto;
+    }
+
+    .header-text {
+        margin-top: 10%;
+    }
+
+    .body-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .img-col img{
+        width: 100%;
+    }
+    .img-col video {
+    width: 80%;
+
+/*    margin: 5px;*/
+    }
+}
+
+@media (max-width: 480px) {
+
+.footer .row{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        padding: 20px 0px;
+    }
+
+    .email {
+        flex-direction: column;
+    }
+
+    .email input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
